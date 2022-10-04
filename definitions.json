@@ -1,0 +1,38 @@
+{
+  "rabbit_version": "3.7.11",
+  "users": [
+    {
+      "name": "ledharaujo@gmail.com",
+      "password_hash": "VDCanXNvLz5sTxD5qK2YX11cinLWYQ8rE1wR1QtWnNI5z9EL",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "ledharaujo@gmail.com",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "parameters": [],
+  "policies": [],
+  "queues": [
+    {
+      "name": "emails",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "exchanges": [],
+  "bindings": []
+}
